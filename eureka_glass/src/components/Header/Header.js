@@ -1,4 +1,5 @@
 import "./Header.scss";
+import Logo from '../../assets/media/icons/header/logo.svg'
 import variables from '../variables.modules.scss';
 
 const Header = () => {
@@ -6,7 +7,7 @@ const Header = () => {
 
   <header>
     <div className="header-content wrap">
-      <a href=""></a>
+      <a href=""><img src={Logo} alt="logo"/></a>
       <nav>
         <ul>
           <li><a href="">О нас</a></li>

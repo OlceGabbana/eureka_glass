@@ -1,20 +1,14 @@
 import "./Before-Header.scss";
-import BHeaderContact from './Before-Header-Contact/Before-Header-Contact'
-import variables from '../../components/variables.modules.scss';
+import BHeaderContact from './Before-Header-Contact/Before-Header-Contact';
+import BHeaderButtons from "./Before-Header-Buttons/Before-Header-Buttons";
 
 const BeforeHeader = () => {
   return (
-
-    <div className="wrap before-header">
+  <div className="wrap before-header">
     <BHeaderContact/>
-    {/* <div className="bheader-buttons">
-      <a href="#feedback" className="bheader-button">Оставить заявку</a>
-      <a href=""><img src="/assets/media/icons/header/telegram.svg" alt=""></a>
-      <a href=""><img src="/assets/media/icons/header/whatsapp.svg" alt=""></a>
-    </div> */}
+    <BHeaderButtons/>
   </div>
-  // <hr className="bheader-hr">
-    
+
   )
 }
 
