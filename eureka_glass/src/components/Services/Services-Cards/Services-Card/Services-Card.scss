@@ -1,0 +1,53 @@
+@import '../../../variables.modules.scss';
+
+.services-card-bg {
+  font-family: $font-semibold;
+  font-size: 150px;
+  color: $color-white;
+  text-shadow:
+  -1px -1px 0 #CBCBCB,  
+   1px -1px 0 #CBCBCB,
+   -1px 1px 0 #CBCBCB,
+    1px 1px 0 #CBCBCB;
+}
+
+.services-card {
+  overflow: hidden;
+  position: relative;
+  width: 28%;
+}
+
+.services-card-content {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  
+  position: absolute;
+  top: 28%;
+  left: 0;
+  z-index: 1;
+  
+  p {
+    font-family: $font-main;
+    font-size: $font-size-36;
+  }
+}
+
+.services-card-content-elem {
+  h3 {
+    font-family: $font-main;
+    font-size: $font-size-24;
+  }
+  
+  span {
+    padding-top: 8px;
+    font-family: $font-semibold;
+    font-size: $font-size-15;
+    color: $color-buttons;
+  }
+  
+  p {
+    margin-top: 25px;
+    font-size: $font-size-15;
+  }
+}
