@@ -1,6 +1,5 @@
 import "./Header.scss";
-import Logo from '../../assets/media/icons/header/logo.svg'
-import variables from '../variables.modules.scss';
+import Logo from '../../assets/media/icons/header/logo.svg';
 
 const Header = () => {
   return (
