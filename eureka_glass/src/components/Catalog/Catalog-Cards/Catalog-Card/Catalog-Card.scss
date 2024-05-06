@@ -9,6 +9,10 @@
   
 }
 
+.catalog-card > img {
+  width: 100%;
+}
+
 .button {
   text-decoration: none;
   padding: 20px 40px;
@@ -24,3 +28,10 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .catalog-card {
+    h3 {
+      text-align: center;
+    }
+  }
+}

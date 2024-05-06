@@ -51,7 +51,7 @@ const CatalogCards = () => {
       {cardsData.map(cardData => (
         <CatalogCard key={cardData.id} cardData={cardData} />
       ))}
-      <div class="catalog-card">
+      <div class="catalog-card" id='catalog-button'>
         <a href="#feedback" class="button">Оставить заявку</a>
       </div>
     </div>

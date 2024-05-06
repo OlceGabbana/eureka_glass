@@ -72,3 +72,16 @@ section {
   font-size: $font-size-52;
   margin-bottom: 60px;
 }
+
+@media screen and (max-width: 1199px) {
+  .wrap {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headers-h2 {
+    text-align: center;
+  }
+}
+
