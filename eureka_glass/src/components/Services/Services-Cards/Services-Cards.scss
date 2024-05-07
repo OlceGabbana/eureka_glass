@@ -27,3 +27,16 @@
     text-decoration: none;
   } 
 }
+
+@media screen and (max-width: 1000px) {
+  .services-cards {
+    align-items: center;
+    row-gap: 10px;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+  } 
+}

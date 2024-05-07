@@ -45,3 +45,20 @@
 .slogan-content {
   padding: 60px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .slogan-main {
+    font-size: $font-size-36;
+  }
+  
+  .slogan-gradient, .slogan-clear {
+    font-size: $font-size-52;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slogan-right-text, .slogan-gradient, .slogan-clear, .slogan-main {
+    text-align: center;
+    font-size: $font-size-36;
+  }
+}
