@@ -16,3 +16,12 @@
     background: #fff;  
   }
 }
+
+@media screen and (max-width: 500px) {
+  .reviews-card {
+    img {
+      width: 60%;
+    }
+    width: 70%;
+  }
+}
