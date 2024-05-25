@@ -1,26 +1,27 @@
-import LogoWhite from '../../assets/media/icons/header/logo-white.svg';
-import IconAddress from '../../assets/media/icons/header/header-address.svg';
-import IconPhone from '../../assets/media/icons/header/header-phone.svg';
-import IconTime from '../../assets/media/icons/header/header-time.svg';
-import TelegramIcon from '../../assets/media/icons/header/telegram.svg';
-import WhatsAppIcon from '../../assets/media/icons/header/whatsapp.svg';
+import LogoWhite from 'assets/media/icons/header/logo-white.svg';
+import IconAddress from 'assets/media/icons/header/header-address.svg';
+import IconPhone from 'assets/media/icons/header/header-phone.svg';
+import IconTime from 'assets/media/icons/header/header-time.svg';
+import TelegramIcon from 'assets/media/icons/header/telegram.svg';
+import WhatsAppIcon from 'assets/media/icons/header/whatsapp.svg';
 import './Footer.scss';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <footer id="footer">
     <div class="header-content footer-content wrap">
-      <a href=""><img src={LogoWhite} alt="логотип"/></a>
-      <nav>
-        <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="#catalog">Каталог</a></li>
-          <li><a href="#services">Услуги</a></li>
-          <li><a href="">Работы</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#footer">Контакты</a></li>
-        </ul>
-      </nav>
+    <Link to="/"><img src={LogoWhite} alt="logo" /></Link>
+        <nav>
+          <ul>
+            <li><Link to={{ pathname: "/", hash: "#about" }}>О нас</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#catalog" }}>Каталог</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#services" }}>Услуги</Link></li>
+            <li><Link to="/works">Работы</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#faq" }}>FAQ</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#footer" }}>Контакты</Link></li>
+          </ul>
+        </nav>
     </div>
     <div class="wrap before-header footer-content">
       <div class="bheader-contact">

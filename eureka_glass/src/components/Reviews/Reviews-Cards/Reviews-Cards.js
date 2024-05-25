@@ -1,5 +1,5 @@
 import './Reviews-Cards.scss';
-import Plug from '../../../assets/media/icons/reviews/plug.svg';
+import Plug from 'assets/media/icons/reviews/plug.svg';
 import ReviewsCard from './Review-Card/Review-Card';
 
 const ReviewsCards = () => {

@@ -1,7 +1,7 @@
 import './Catalog-Card-Desc.scss';
 import CatalogCardDescElem from './Catalog-Card-Desc-Elem/Catalog-Card-Desc-Elem';
-import IconTime from '../../../../../assets/media/icons/catalog/catalog-time.svg';
-import IconPrice from '../../../../../assets/media/icons/catalog/catalog-price.svg';
+import IconTime from 'assets/media/icons/catalog/catalog-time.svg';
+import IconPrice from 'assets/media/icons/catalog/catalog-price.svg';
 
 const CatalogCardDesc = ({ cardData }) => {
   const { textTime, textPrice } = cardData;

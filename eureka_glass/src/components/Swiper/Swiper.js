@@ -1,11 +1,11 @@
 import Swiper from 'react-id-swiper';
 import React, { useRef, useState, useEffect } from 'react';
 import '../../../node_modules/swiper/swiper.scss';
-import carouselImg1 from '../../assets/media/images/carousel1.jpg';
-import carouselImg2 from '../../assets/media/images/carousel2.jpg';
-import carouselImg3 from '../../assets/media/images/carousel3.jpg';
-import carouselImg4 from '../../assets/media/images/carousel4.jpg';
-import carouselImg5 from '../../assets/media/images/carousel5.jpg';
+import carouselImg1 from 'assets/media/images/carousel1.jpg';
+import carouselImg2 from 'assets/media/images/carousel2.jpg';
+import carouselImg3 from 'assets/media/images/carousel3.jpg';
+import carouselImg4 from 'assets/media/images/carousel4.jpg';
+import carouselImg5 from 'assets/media/images/carousel5.jpg';
 import './Swiper.scss';
 import About from '../About/About';
 
@@ -78,7 +78,6 @@ const ManipulatingComponentOutSideSwiper = () => {
             <button onClick={goPrev}>&laquo;</button>
             <button onClick={goNext}>&raquo;</button>
           </div>
-          
         </div>
       </div>
       <div className="white-paper">

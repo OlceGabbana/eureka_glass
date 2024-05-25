@@ -1,12 +1,12 @@
 import './Before-Header-Buttons.scss';
-import TelegramIcon from '../../../assets/media/icons/header/telegram.svg';
-import WhatsAppIcon from '../../../assets/media/icons/header/whatsapp.svg';
-import variables from '../../variables.modules.scss';
+import TelegramIcon from 'assets/media/icons/header/telegram.svg';
+import WhatsAppIcon from 'assets/media/icons/header/whatsapp.svg';
+import { Link } from 'react-router-dom';
 
 const BHeaderButtons = () => {
   return (
     <div className="bheader-buttons">
-      <a href="#feedback" className="bheader-button">Оставить заявку</a>
+      <Link to="/#feedback" className="bheader-button">Оставить заявку</Link>
       <a href=""><img src={TelegramIcon} alt=""/></a>
       <a href=""><img src={WhatsAppIcon} alt=""/></a>
     </div> 

@@ -1,6 +1,5 @@
 import './Catalog.scss';
 import CatalogCards from './Catalog-Cards/Catalog-Cards';
-import variables from '../variables.modules.scss';
 
 const Catalog = () => {
   return (

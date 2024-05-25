@@ -1,6 +1,6 @@
 import './Catalog-Card.scss';
 import CatalogCardDesc from './Catalog-Card-Desc/Catalog-Card-Desc';
-import ImgPlug from '../../../../assets/media/images/plug.png';
+import ImgPlug from 'assets/media/images/plug.png';
 
 const CatalogCard = ({ cardData }) => {
   const { title } = cardData;

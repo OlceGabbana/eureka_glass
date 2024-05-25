@@ -1,4 +1,5 @@
 import './Catalog-Cards.scss';
+import { Link } from 'react-router-dom';
 import CatalogCard from './Catalog-Card/Catalog-Card';
 
 const CatalogCards = () => {
@@ -52,7 +53,7 @@ const CatalogCards = () => {
         <CatalogCard key={cardData.id} cardData={cardData} />
       ))}
       <div class="catalog-card" id='catalog-button'>
-        <a href="#feedback" class="button">Оставить заявку</a>
+        <Link to="/#feedback" class="button">Оставить заявку</Link>
       </div>
     </div>
   )

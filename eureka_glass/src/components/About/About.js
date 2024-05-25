@@ -1,4 +1,5 @@
 import './About.scss';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
           <li>Срок службы нашего стекла - 50 лет</li>
           <li>Гарантия качества и сервисное обслуживание</li>
         </ul>
-        <a href="#feedback">Оставить заявку</a>
+        <Link to="/#feedback">Оставить заявку</Link>
       </div>
     </section>
   )

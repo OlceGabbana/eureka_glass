@@ -1,9 +1,8 @@
 import './Before-Header-Contact.scss';
 import BHeaderCElem from './Before-Header-Contact-Elem/Before-Header-Contact-Elem';
-import IconAddress from '../../../assets/media/icons/header/header-address.svg';
-import IconPhone from '../../../assets/media/icons/header/header-phone.svg';
-import IconTime from '../../../assets/media/icons/header/header-time.svg';
-import variables from '../../variables.modules.scss';
+import IconAddress from 'assets/media/icons/header/header-address.svg';
+import IconPhone from 'assets/media/icons/header/header-phone.svg';
+import IconTime from 'assets/media/icons/header/header-time.svg';
 
 const BHeaderContact = () => {
   return (

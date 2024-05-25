@@ -1,10 +1,10 @@
 import './Advantages-Cards.scss';
 import AdvantagesCard from './Advantages-Card/Advantages-Card';
-import IconDiscount from '../../../assets/media/icons/advantages/discount.svg';
-import IconConsultant from '../../../assets/media/icons/advantages/consultant.svg';
-import IconBill from '../../../assets/media/icons/advantages/bill.svg';
-import IconBox from '../../../assets/media/icons/advantages/box.svg';
-import IconDelivery from '../../../assets/media/icons/advantages/delivery.svg';
+import IconDiscount from 'assets/media/icons/advantages/discount.svg';
+import IconConsultant from 'assets/media/icons/advantages/consultant.svg';
+import IconBill from 'assets/media/icons/advantages/bill.svg';
+import IconBox from 'assets/media/icons/advantages/box.svg';
+import IconDelivery from 'assets/media/icons/advantages/delivery.svg';
 
 const AdvantagesCards = () => {
   const advCardsData = [

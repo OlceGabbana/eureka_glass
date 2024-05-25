@@ -1,4 +1,5 @@
 import './Services-Cards.scss';
+import { Link } from 'react-router-dom';
 import ServicesCard from './Services-Card/Services-Card';
 
 const ServicesCards = () => {
@@ -43,7 +44,7 @@ const ServicesCards = () => {
           <div class="services-card-content-elem">
             <h3>ВАША ЗАЯВКА</h3>
             <div class="services-button">
-              <a href="#feedback">Оставить заявку</a>
+              <Link to="/#feedback">Оставить заявку</Link>
             </div>
           </div>
         </div>
