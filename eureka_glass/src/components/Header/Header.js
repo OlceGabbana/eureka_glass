@@ -1,24 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "components/Header/Header.scss";
 import Logo from 'assets/media/icons/header/logo.svg';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  const handleOutsideClick = (event) => {
+    if (event.target.classList.contains('overlay')) {
+      closeMenu();
+    }
+  };
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.addEventListener('click', handleOutsideClick);
+    } else {
+      document.removeEventListener('click', handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [menuOpen]);
+
   return (
     <header>
       <div className="header-content wrap">
         <Link to="/"><img src={Logo} alt="logo" /></Link>
-        <nav>
+        <button className="burger-menu" onClick={toggleMenu}>
+          ☰
+        </button>
+        <nav className={menuOpen ? 'open' : ''}>
+          <button className="close-menu" onClick={closeMenu}>
+            ✕
+          </button>
           <ul>
-            <li><Link to={{ pathname: "/", hash: "#about" }}>О нас</Link></li>
-            <li><Link to={{ pathname: "/", hash: "#catalog" }}>Каталог</Link></li>
-            <li><Link to={{ pathname: "/", hash: "#services" }}>Услуги</Link></li>
-            <li><Link to="/works">Работы</Link></li>
-            <li><Link to={{ pathname: "/", hash: "#faq" }}>FAQ</Link></li>
-            <li><Link to={{ pathname: "/", hash: "#footer" }}>Контакты</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#about" }} onClick={closeMenu}>О нас</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#catalog" }} onClick={closeMenu}>Каталог</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#services" }} onClick={closeMenu}>Услуги</Link></li>
+            <li><Link to="/works" onClick={closeMenu}>Работы</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#faq" }} onClick={closeMenu}>FAQ</Link></li>
+            <li><Link to={{ pathname: "/", hash: "#footer" }} onClick={closeMenu}>Контакты</Link></li>
           </ul>
         </nav>
       </div>
+      <div className={menuOpen ? 'overlay open' : 'overlay'} onClick={closeMenu}></div>
     </header>
   );
 }

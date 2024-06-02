@@ -8,22 +8,15 @@ const Feedback = () => {
       <div class="feedback-content">
         <div class="feedback-content-col">
           <p>
-            ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
-            ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
-            ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
-            ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
-            ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
-            ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
-            ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
-            ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ
+          Компания "Eureka Glass" - современные стеклянные и зеркальные конструкции, а также индивидуальный подход к каждому Клиенту.
           </p>
           <input type="checkbox" name="" id="" checked/>
           <label for="">Разрешаю обработку персональных данных</label>
         </div>
         <div class="feedback-content-col">
           <form>
-            <input type="text" placeholder="Ваше имя"/>
-            <input type="text" placeholder="Ваш телефон"/>
+            <input type="text" placeholder="Ваше имя*" required/>
+            <input type="text" placeholder="Ваш телефон*" required/>
             <input type="email" placeholder="Адрес эл. почты"/>
             <input type="submit" value="Отправить"/>
           </form>
